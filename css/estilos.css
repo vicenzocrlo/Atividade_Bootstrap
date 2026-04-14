@@ -1,0 +1,41 @@
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.nav-icon img {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.card h-100 {
+    margin: 20px;
+    border:rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+
+.btn {
+    background-color: rgb(40, 168, 40);
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.col-md-5 {
+    padding-right: 20px;
+}
