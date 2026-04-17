@@ -24,13 +24,13 @@
                 <ul class="navbar-nav">
                     <li class="nav-icon">
                         <a class="nav-link active" aria-current="page" href="index.html"><img
-                                src="img/imagem_2026-04-13_210520886-removebg-preview.png" ></a>
+                                src="img/imagem_2026-04-13_210520886-removebg-preview.png"></a>
                     </li>
                     <li class=" nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contato.html">Contact</a>
+                        <a class="nav-link" href="contato.html">Register</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="sobre.html">About us</a>
@@ -42,76 +42,74 @@
     </nav>
 
     <div class="container mt-3">
-        <h3>Contact</h3>
+        <h3>Products</h3>
         <form class="row g-3">
             <div class="col-md-7 col-sm-12">
                 <div class="form-floating">
                     <input type="text" name="name" id="name" class="form-control" placeholder="full name" required>
-                    <label for="name">Full name</label>
+                    <label for="name">Product name</label>
                 </div>
             </div>
 
 
             <div class="col-md-5 col-sm-12">
                 <div class="form-floating">
-                    <input type="email" name="email" id="email" class="form-control" placeholder="E-mail" required>
-                    <label for="email">E-mail</label>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-12">
-                <div class="form-floating">
-                    <input type="password" name="password" id="password" class="form-control" placeholder="Password"
+                    <input type="number" name="number" id="price" class="form-control" placeholder="Price" step="0.5"
                         required>
-                    <label for="password">Password</label>
+                    <label for="price">Price</label>
                 </div>
             </div>
 
             <div class="col-md-4 col-sm-12">
                 <div class="form-floating">
-                    <input type="date" name="date" id="date" class="form-control" />
-                    <label for="date">Date</label>
+                    <input type="number" name="quantity" id="quantity" class="form-control" placeholder="Quantity"
+                        required>
+                    <label for="quantity">Quantity</label>
                 </div>
             </div>
 
             <div class="col-md-4 col-sm-12">
                 <div class="form-floating">
                     <select name="category" id="category" class="form-select" required>
-                        <option value="" selected disabled>Selecione</option>
-                        <option value="frontend">Frontend</option>
-                        <option value="backend">Backend</option>
+                        <option value="" selected disabled>Select</option>
+                        <option value="alimentos">Alimentos</option>
+                        <option value="saude">Saúde</option>
+                        <option value="habitacao">Habitação</option>
                     </select>
                     <label for="category">Category</label>
                 </div>
             </div>
 
-    <div class="col-md-4 col-sm-12">
-        <label class="=form-label d-block">Type</label>
-        <div class="form-check form-check-inline">
-            <input type="radio" name="type" id="student" class="form-check-input">
-            <label for="student" class="form-check-label">Student</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input type="radio" name="type" id="teacher" class="form-check-input">
-            <label for="teacher" class="form-check-label">Teacher</label>
-        </div>
-    </div>
-    <div class="col-md-4 col-sm-12">
-        <div class="form-check">
-            <input type="checkbox" name="terms" id="terms" class="form-check-input" required>
-            <label for="termos" class="form-check-label">Acept the terms</label>
+            <div class="col-md-4 col-sm-12">
+                <div class="form-floating">
+                    <input type="date" name="date" id="date" class="form-control" />
+                    <label for="date">Made in</label>
+                </div>
+            </div>
 
-        </div>
+            <div class="col-md-4 col-sm-12">
+                <label class="=form-label d-block">Made from:</label>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="type" id="student" class="form-check-input">
+                    <label for="student" class="form-check-label">SP</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="type" id="teacher" class="form-check-input">
+                    <label for="teacher" class="form-check-label">RJ</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="type" id="teacher" class="form-check-input">
+                    <label for="teacher" class="form-check-label">MG</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-success">Invite</button>
+                <button type="reset" class="btn btn-warning">Clear</button>
+                <button type="button" class="btn btn-danger">Cancel</button>
+            </div>
+        </form>
     </div>
-
-    <div class="col-12">
-        <button type="submit" class="btn btn-success">Invite</button>
-        <button type="reset" class="btn btn-success">Clear</button>
-        <button type="button" class="btn btn-success">Cancel</button>
     </div>
-    </form>
-    </div>
-</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
